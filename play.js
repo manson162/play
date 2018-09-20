@@ -6,8 +6,9 @@ fetch(url)
   (res) =>
   {
     console.log(res)
-    document.getElementById("addUrl").href = url.data;
+    document.getElementById("addUrl").href = res;
     document.getElementById("addUrl").innerHTML = "Datasheet";
+    if (res == null) {
+      document.getElementById("addUrl").style.display = "none";
+  }
   })
-
-
