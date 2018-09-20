@@ -5,7 +5,7 @@ Date.prototype.getWeek = function () {
 }
 
 var weekNumber = (new Date()).getWeek();
-//weekNumber = weekNumber + 2; //To test week incease
+//weekNumber = weekNumber + 2; //To test week inceases correclty
 var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var now = new Date();
 document.write(dayNames[now.getDay()] + " (" + weekNumber + ").");
