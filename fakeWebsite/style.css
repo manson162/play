@@ -1,0 +1,220 @@
+.simple-svg {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+
+}
+
+.margin {
+    grid-area: margin;
+    background-color: black;
+}
+.bottomMargin {
+    grid-area: bottomMargin;
+    background-color: black;
+}
+
+
+.side {
+    grid-area: side;
+    background-color: black;
+
+}
+.content {
+    grid-area: content;
+    background-color: whitesmoke;
+}
+.homeBtn {
+    grid-area: homeBtn;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homeBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.inputBtn {
+    grid-area: inputBtn;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.productsBtn {
+    grid-area: productsBtn;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.productsBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.outputBtn {
+    grid-area: outputBtn;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.outputBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.settingsBtn {
+    grid-area: settingsBtn;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.settingsBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+body, html {
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 15px 80px 80px 80px 80px auto 80px 15px;
+    height: 100%;
+    grid-template-areas:
+    'margin content'
+    'homeBtn content'
+    'inputBtn content'
+    'productsBtn content'
+    'outputBtn content'
+    'side content'
+    'settingsBtn content'
+    'bottomMargin content'
+    ;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,600,600italic,700,700italic);
+body {
+		
+		background-color: #f9f9f9;
+}
+
+.container{
+	height:500px;
+	width:1580px;
+	padding:0;
+	margin:10px;
+	border-radius:5px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.3)
+	
+}
+
+header {
+		position: relative;
+}
+
+.hide {
+		display: none;
+}
+
+.tab-content {
+		padding:25px;
+}
+
+#material-tabs {
+		position: relative;
+		display: block;
+	  padding:0;
+		border-bottom: 1px solid #e0e0e0;
+}
+
+#material-tabs>a {
+		position: relative;
+	 display:inline-block;
+		text-decoration: none;
+		padding: 22px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 600;
+		color: #424f5a;
+		text-align: center;
+		outline:;
+}
+
+#material-tabs>a.active {
+		font-weight: 700;
+		outline:none;
+}
+
+#material-tabs>a:not(.active):hover {
+		background-color: inherit;
+		color: #7c848a;
+}
+
+@media only screen and (max-width: 520px) {
+		.nav-tabs#material-tabs>li>a {
+				font-size: 11px;
+		}
+}
+
+.yellow-bar {
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		height: 3px;
+		background: #458CFF;
+		display: block;
+		left: 0;
+		transition: left .2s ease;
+		-webkit-transition: left .2s ease;
+}
+
+#tab1-tab.active ~ span.yellow-bar {
+		left: 0;
+		width: 160px;
+}
+
+#tab2-tab.active ~ span.yellow-bar {
+		left:165px;
+		width: 82px;
+}
+
+#tab3-tab.active ~ span.yellow-bar {
+		left: 253px;
+		width: 135px;
+}
+
+#tab4-tab.active ~ span.yellow-bar {
+		left:392px;
+		width: 163px;
+}
